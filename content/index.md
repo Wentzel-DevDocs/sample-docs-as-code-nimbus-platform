@@ -7,7 +7,7 @@ audience: all
 category: overview
 product: Nimbus Platform
 owners: docs-writers
-last_reviewed: 2025-07-15
+last_reviewed: 2025-08-12
 ---
 
 # Welcome to Nimbus
