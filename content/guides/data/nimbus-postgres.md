@@ -7,7 +7,7 @@ audience: developers
 category: how-to
 product: Nimbus Platform
 owners: docs-writers
-last_reviewed: 2025-08-12
+last_reviewed: 2025-09-09
 ---
 
 # Managed Postgres
