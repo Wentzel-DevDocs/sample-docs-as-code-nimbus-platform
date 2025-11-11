@@ -7,7 +7,7 @@ audience: developers
 category: how-to
 product: Nimbus Platform
 owners: docs-writers
-last_reviewed: 2025-10-14
+last_reviewed: 2025-11-11
 ---
 
 # Your first deployment
