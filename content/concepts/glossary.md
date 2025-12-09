@@ -7,7 +7,7 @@ audience: all
 category: concept
 product: Nimbus Platform
 owners: docs-writers
-last_reviewed: 2025-11-11
+last_reviewed: 2025-12-09
 ---
 
 # Glossary
