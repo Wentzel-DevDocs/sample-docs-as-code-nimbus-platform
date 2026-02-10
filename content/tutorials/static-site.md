@@ -7,7 +7,7 @@ audience: developers
 category: tutorial
 product: Nimbus Platform
 owners: docs-writers
-last_reviewed: 2026-01-13
+last_reviewed: 2026-02-10
 ---
 
 # Deploy a static site
