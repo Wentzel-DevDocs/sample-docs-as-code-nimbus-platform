@@ -7,7 +7,7 @@ audience: all
 category: troubleshooting
 product: Nimbus Platform
 owners: docs-writers
-last_reviewed: 2026-03-10
+last_reviewed: 2026-04-14
 ---
 
 # FAQ
