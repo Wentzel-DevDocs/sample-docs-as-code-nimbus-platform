@@ -5,7 +5,7 @@
   "summary": "Documentation for Nimbus, a fictional cloud platform for deploying web services, background workers, cron jobs, and static sites, with built-in object storage, a key-value store, and managed Postgres.",
   "sampleQuestion": "How do I add a custom domain to a service?",
   "product": "Nimbus Platform",
-  "docsVersion": "0.9.0-dev",
+  "docsVersion": "1.0.0",
   "supportEmail": "docs-sample@example.com",
   "extraArtifacts": [
     {
