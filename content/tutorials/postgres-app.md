@@ -7,7 +7,7 @@ audience: developers
 category: tutorial
 product: Nimbus Platform
 owners: docs-writers
-last_reviewed: 2026-05-12
+last_reviewed: 2026-06-09
 ---
 
 # Build an app on Postgres

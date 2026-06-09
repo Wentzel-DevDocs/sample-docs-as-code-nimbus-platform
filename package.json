@@ -1,6 +1,6 @@
 {
   "name": "sample-nimbus-platform",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "description": "Complex enterprise sample docs-as-code repo (Nimbus cloud platform) for hosted.devdocs.ai sample ingestion demos.",
   "type": "module",
