@@ -7,7 +7,7 @@ audience: all
 category: concept
 product: Nimbus Platform
 owners: docs-writers
-last_reviewed: 2026-06-09
+last_reviewed: 2026-07-07
 ---
 
 # Projects and environments

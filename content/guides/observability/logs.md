@@ -7,7 +7,7 @@ audience: developers
 category: how-to
 product: Nimbus Platform
 owners: docs-writers
-last_reviewed: 2026-06-09
+last_reviewed: 2026-07-07
 ---
 
 # Logs
