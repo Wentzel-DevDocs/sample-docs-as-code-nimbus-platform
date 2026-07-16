@@ -7,7 +7,7 @@ audience: developers
 category: tutorial
 product: Nimbus Platform
 owners: docs-writers
-last_reviewed: 2026-07-07
+last_reviewed: 2026-07-16
 ---
 
 # Run scheduled jobs
