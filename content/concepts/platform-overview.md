@@ -16,6 +16,9 @@ Nimbus has a small number of nouns, arranged in a strict hierarchy. Understandin
 
 ## The hierarchy
 
+![Nimbus hierarchy from organization to project, environments, services, and resources](/assets/diagrams/nimbus-hierarchy.svg)
+
+
 | Level | What it is |
 | --- | --- |
 | Organization | Billing boundary and member list |

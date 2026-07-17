@@ -65,3 +65,7 @@ Deploys gate on this — see [Services](/concepts/services).
 Under **Project → Git** in the dashboard, connect a repository to get push-to-deploy: pushes to the default branch deploy `production`, and every other branch gets a [preview environment](/concepts/projects-and-environments). You can keep deploying from the CLI as well; the flows coexist.
 
 Next: [your first deployment](/guides/getting-started/first-deployment).
+
+## Minimal config
+
+<!-- include: nimbus-yaml-minimal.md -->

@@ -65,3 +65,7 @@ When `NIMBUS_TOKEN` is set, the CLI uses it and skips the keychain entirely.
 - Install script: `nimbus upgrade` replaces the binary in place.
 
 Next: [set up a project](/guides/getting-started/project-setup).
+
+## After install
+
+<!-- include: cli-login.md -->
