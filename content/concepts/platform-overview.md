@@ -2,6 +2,12 @@
 title: Platform overview
 description: The pieces of Nimbus — organizations, projects, environments, services, and resources — and how a deploy flows through them.
 order: 1
+status: stable
+audience: all
+category: concept
+product: Nimbus Platform
+owners: docs-writers
+last_reviewed: 2026-07-01
 ---
 
 # Platform overview
@@ -19,6 +25,27 @@ Nimbus has a small number of nouns, arranged in a strict hierarchy. Understandin
 | Resource | Attached storage: a Store bucket, a KV namespace, or a Postgres database |
 
 Details on the top of the hierarchy are in [Projects and environments](/concepts/projects-and-environments); the bottom is covered in [Services](/concepts/services).
+
+
+## Architecture at a glance
+
+```mermaid
+flowchart TB
+  subgraph Org[Organization]
+    P[Project]
+    P --> E1[Environment: production]
+    P --> E2[Environment: preview]
+  end
+  E1 --> W[Web service]
+  E1 --> WK[Worker]
+  E1 --> S[Store / KV / Postgres]
+  Dev[git push / nimbus deploy] --> Build[Build image]
+  Build --> E1
+  Users[Users] --> Edge[Edge TLS + static]
+  Edge --> W
+```
+
+Traffic always enters through the edge. Service instances and data resources stay in the project's primary region unless a feature explicitly says otherwise.
 
 ## How a deploy flows
 

@@ -2,6 +2,12 @@
 title: API authentication
 description: Personal access tokens for the REST API — creating and scoping them, sending the Authorization header, expiry, revocation, and CI patterns.
 order: 2
+status: stable
+audience: developers
+category: reference
+product: Nimbus Platform
+owners: docs-writers
+last_reviewed: 2026-07-01
 ---
 
 # API authentication

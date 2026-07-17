@@ -2,6 +2,12 @@
 title: Identity and access
 description: Organization roles, what each role can do, personal access tokens for the API, and how secrets are protected.
 order: 6
+status: stable
+audience: all
+category: concept
+product: Nimbus Platform
+owners: docs-writers
+last_reviewed: 2026-07-01
 ---
 
 # Identity and access

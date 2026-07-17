@@ -1,83 +1,97 @@
 # sample-nimbus-platform
 
-The **complex** sample docs-as-code repo for the `hosted.devdocs.ai` multi-tenant docs product:
-38 pages in a three-level nav across five product areas (Concepts, Guides, Reference, Tutorials,
-Troubleshooting), dense internal cross-links, and a build-generated `llms.txt` site index. The
-content documents **Nimbus**, a fictional cloud platform. This repo is the one for exercising
-scale: chunking, retrieval under volume, and citation quality across a deep nav tree.
+**Complex** enterprise docs-as-code sample for [hosted.devdocs.ai](https://hosted.devdocs.ai).
+
+Documents **Nimbus**, a fictional cloud platform, with a three-level nav, Diátaxis sections, glossary, release notes, redirect map, Mermaid architecture diagrams, and generated `llms.txt`. Use this when you want volume: chunking, deep navigation, and cross-page retrieval.
+
+| Scale | Nav | Pages | Extra artifacts |
+| --- | --- | ---: | --- |
+| Complex | Three-level | 40 | `llms.txt`, `redirects.json` |
+
+## Why this looks like an enterprise platform docs repo
+
+- **Concepts / Guides / Tutorials / Reference / Troubleshooting** information architecture
+- Nested nav groups via `_section.json` at every folder level
+- Glossary + release notes as first-class pages
+- Sample `config/redirects.json` for path migrations (published artifact)
+- Mermaid diagrams in concept pages
+- Enterprise page metadata on every file
+- Full CI: quality gate on PRs, build + optional publish on `main`
+- `CODEOWNERS`, contribution guide, and style guide for multi-team ownership
 
 ## Repo layout
 
 ```
 content/
-  index.md                       root page (path "index")
-  concepts/                      6 pages — platform mental model
+  index.md
+  release-notes.md
+  concepts/                + glossary
   guides/
-    getting-started/             3 pages
-    compute/                     4 pages
-    data/                        3 pages
-    observability/               3 pages
+    getting-started/
+    compute/
+    data/
+    observability/
   reference/
-    cli/                         4 pages
-    api/                         4 pages
-    config/                      2 pages
-  tutorials/                     4 pages
-  troubleshooting/               4 pages
-scripts/publish.mjs              build + publish script (also generates llms.txt)
-docs.config.json                 site title, default slug, generateLlmsTxt: true
-.github/workflows/publish.yml    publishes from CI on push to main
+    cli/
+    api/
+    config/
+  tutorials/
+  troubleshooting/
+config/redirects.json      sample migration map (published)
+docs.config.json
+scripts/check.mjs
+scripts/publish.mjs
+.github/
+CONTRIBUTING.md
+STYLEGUIDE.md
 ```
 
-Each folder's `_section.json` names and orders its nav group; page frontmatter (`title`,
-`description`, `order`) orders pages within a group.
+## Content map (40 pages)
 
-## One-time account setup (manual, done in the product)
+| Area | Count | Notes |
+| --- | ---: | --- |
+| Root | 2 | Welcome, release notes |
+| Concepts | 7 | Includes glossary |
+| Guides | 13 | Getting started, compute, data, observability |
+| Reference | 10 | CLI, REST API, config |
+| Tutorials | 4 | End-to-end builds |
+| Troubleshooting | 4 | Failures + FAQ |
 
-1. Sign up at `https://hosted.devdocs.ai/signup` and verify the email.
-2. Claim a subdomain in the dashboard (for example `nimbus`).
-3. Create a **push token** in the dashboard — it starts with `hdpt_` and is shown once.
-
-The token is scoped to the workspace that minted it, and the broker derives the storage path
-from the token server-side, so this repo can only ever write its own site.
-
-## Publish
+## Local workflow
 
 ```bash
-npm install
-PUSH_TOKEN=hdpt_xxx SLUG=<your-subdomain> node scripts/publish.mjs
-# or: PUSH_TOKEN=hdpt_xxx SLUG=<your-subdomain> npm run publish
+npm ci
+npm test
+PUSH_TOKEN=hdpt_xxx SLUG=nimbus npm run publish   # optional
 ```
 
-- `VERSION` is optional (env var or first CLI arg); it defaults to a timestamp.
-- `SLUG` sets the live URL printed at the end **and** the absolute page URLs written into
-  `llms.txt`, so set it (or `defaultSlug` in `docs.config.json`) to your claimed subdomain.
-- A successful push (HTTP 200) **automatically becomes the live version**. The script prints the
-  broker response (`versionId`, `entries`, `chunksIndexed`) and `https://<slug>.hosted.devdocs.ai`.
+Dry-run output includes `dist/site/llms.txt` and `dist/site/redirects.json`.
 
-After publishing, open the site's chat widget and ask something the docs answer — for example,
-"How do I add a custom domain to a service?" — to verify grounded citations under volume.
+## Structural rules (enterprise)
 
-## Build without publishing (no token needed)
+1. Every nav folder has `_section.json` with `title` + `order`.
+2. Every page has `title`, `description`, `order`, plus recommended ownership metadata.
+3. Internal links use root-absolute paths (`/guides/compute/scaling`).
+4. Renames update `config/redirects.json` in the same PR.
 
-```bash
-DRY_RUN=1 node scripts/publish.mjs
-```
+## One-time product setup
 
-Writes the exact POST body to `dist/push-body.json` and unpacks every artifact under `dist/site/`
-(including the generated `llms.txt`).
+1. Sign up at `https://hosted.devdocs.ai/signup`.
+2. Claim a subdomain (for example `nimbus`).
+3. Create a push token; set `HOSTED_DOCS_PUSH_TOKEN` for CI publish.
 
-## Publish from CI (the intended model)
+`SLUG` / `defaultSlug` also drives absolute URLs inside generated `llms.txt`.
 
-Add the push token as a repo secret named `HOSTED_DOCS_PUSH_TOKEN`; the included workflow builds
-and publishes on every push to `main`, using the git SHA as the version.
+## Verify after publish
 
-## How the artifact format works
+Ask: **How do I add a custom domain to a service?**
 
-Each publish POSTs `{ manifest, files }` to `https://hosted.devdocs.ai/api/broker/push` with
-`Authorization: Bearer <PUSH_TOKEN>`. `manifest.entries` lists every file with its lowercase hex
-`sha256` and byte `size` (verified server-side); `files` maps the same paths to base64 bytes.
-Artifacts per publish: one `manifest.json` (`{ version, siteTitle, nav }` — folders become
-grouping NavEntries, files become leaves), a `<path>.page.json` per page (sanitized `bodyHtml`
-with id anchors matching its `toc`), the verbatim `<path>.md` source that feeds the AI retrieval
-index, and — for this repo — a generated `llms.txt` summarizing every page with its description
-and markdown URL. The root page's path is exactly `index`.
+Also try a cross-section question such as: **What is the difference between a project and an environment?**
+
+## Related samples
+
+| Repo | Intent |
+| --- | --- |
+| [hello-docs](https://github.com/Wentzel-DevDocs/sample-docs-as-code-hello-docs) | Simple / flat |
+| [acme-api](https://github.com/Wentzel-DevDocs/sample-docs-as-code-acme-api) | Medium / API + OpenAPI |
+| [nimbus-platform](https://github.com/Wentzel-DevDocs/sample-docs-as-code-nimbus-platform) | Complex / platform |

@@ -2,6 +2,12 @@
 title: nimbus logs
 description: Full reference for nimbus logs — following, time windows, grep filters, deploy and cron-run selectors, and JSON output.
 order: 3
+status: stable
+audience: developers
+category: reference
+product: Nimbus Platform
+owners: docs-writers
+last_reviewed: 2026-07-01
 ---
 
 # nimbus logs

@@ -2,6 +2,12 @@
 title: CLI overview
 description: The nimbus CLI at a glance — every command grouped by task, global flags, environment variables, and exit codes.
 order: 1
+status: stable
+audience: developers
+category: reference
+product: Nimbus Platform
+owners: docs-writers
+last_reviewed: 2026-07-01
 ---
 
 # CLI overview

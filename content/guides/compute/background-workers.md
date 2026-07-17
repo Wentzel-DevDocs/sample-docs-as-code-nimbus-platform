@@ -2,6 +2,12 @@
 title: Background workers
 description: Run long-lived non-HTTP processes — declaring a worker, feeding it work, graceful shutdown, and choosing worker counts.
 order: 4
+status: stable
+audience: developers
+category: how-to
+product: Nimbus Platform
+owners: docs-writers
+last_reviewed: 2026-07-01
 ---
 
 # Background workers

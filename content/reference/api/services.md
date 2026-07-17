@@ -2,6 +2,12 @@
 title: Projects, services, and deployments
 description: REST endpoints for listing projects and services, reading service details, creating deployments, and rolling back.
 order: 3
+status: stable
+audience: developers
+category: reference
+product: Nimbus Platform
+owners: docs-writers
+last_reviewed: 2026-07-01
 ---
 
 # Projects, services, and deployments

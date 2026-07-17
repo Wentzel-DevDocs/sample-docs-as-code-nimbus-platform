@@ -2,6 +2,12 @@
 title: Alerts
 description: Create threshold alerts on metrics, get platform event alerts for crashes and failed deploys, and route notifications to email or webhooks.
 order: 3
+status: stable
+audience: developers
+category: how-to
+product: Nimbus Platform
+owners: docs-writers
+last_reviewed: 2026-07-01
 ---
 
 # Alerts

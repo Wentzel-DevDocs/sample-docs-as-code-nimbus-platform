@@ -2,6 +2,12 @@
 title: FAQ
 description: Frequently asked questions — pricing model, sleeping free services, monorepos, Docker Compose, data export, region moves, and support.
 order: 4
+status: stable
+audience: all
+category: troubleshooting
+product: Nimbus Platform
+owners: docs-writers
+last_reviewed: 2026-07-01
 ---
 
 # FAQ

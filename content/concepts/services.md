@@ -2,6 +2,12 @@
 title: Services
 description: The four Nimbus service types — web, worker, cron, and static — what each provides, and how they are declared.
 order: 3
+status: stable
+audience: all
+category: concept
+product: Nimbus Platform
+owners: docs-writers
+last_reviewed: 2026-07-01
 ---
 
 # Services

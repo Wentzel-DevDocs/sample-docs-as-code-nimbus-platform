@@ -2,6 +2,12 @@
 title: Custom domains
 description: Attach your own domain to a service — DNS records, automatic TLS issuance and renewal, apex domains, and wildcard subdomains.
 order: 3
+status: stable
+audience: developers
+category: how-to
+product: Nimbus Platform
+owners: docs-writers
+last_reviewed: 2026-07-01
 ---
 
 # Custom domains

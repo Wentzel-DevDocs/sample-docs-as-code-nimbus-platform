@@ -2,6 +2,12 @@
 title: Welcome to Nimbus
 description: Nimbus is a cloud platform for deploying web services, workers, cron jobs, and static sites, with built-in object storage, a key-value store, and managed Postgres.
 order: 0
+status: stable
+audience: all
+category: overview
+product: Nimbus Platform
+owners: docs-writers
+last_reviewed: 2026-07-01
 ---
 
 # Welcome to Nimbus
@@ -31,7 +37,8 @@ Your service comes up at `https://<service>-<project>.nimbusapp.example`, and `n
 ## Find your way around
 
 - New here? Start with [Install the CLI](/guides/getting-started/install-cli) and [Your first deployment](/guides/getting-started/first-deployment).
-- Want the mental model? Read [Platform overview](/concepts/platform-overview) and [Projects and environments](/concepts/projects-and-environments).
+- Want the mental model? Read [Platform overview](/concepts/platform-overview), [Projects and environments](/concepts/projects-and-environments), and the [Glossary](/concepts/glossary).
 - Building something concrete? The [tutorials](/tutorials/deploy-node-api) walk through complete apps.
 - Looking something up? The [CLI](/reference/cli/overview), [REST API](/reference/api/overview), and [nimbus.yaml](/reference/config/nimbus-yaml) references cover every flag, endpoint, and key.
 - Stuck? [Troubleshooting](/troubleshooting/build-failures) collects the failure modes we see most.
+- Shipping changes? Check [Release notes](/release-notes).

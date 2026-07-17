@@ -2,6 +2,12 @@
 title: Deploy a Node.js API
 description: A complete walkthrough deploying an Express API — Dockerfile, health check, nimbus.yaml, first deploy, secrets, and autoscaling.
 order: 1
+status: stable
+audience: developers
+category: tutorial
+product: Nimbus Platform
+owners: docs-writers
+last_reviewed: 2026-07-01
 ---
 
 # Deploy a Node.js API

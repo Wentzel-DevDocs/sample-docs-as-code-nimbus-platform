@@ -2,6 +2,12 @@
 title: Projects and environments
 description: What a Nimbus project owns, how production and preview environments work, and how configuration varies per environment.
 order: 2
+status: stable
+audience: all
+category: concept
+product: Nimbus Platform
+owners: docs-writers
+last_reviewed: 2026-07-01
 ---
 
 # Projects and environments

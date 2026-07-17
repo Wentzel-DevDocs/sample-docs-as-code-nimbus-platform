@@ -2,6 +2,12 @@
 title: Install the CLI
 description: Install the nimbus CLI with npm or the install script, authenticate with nimbus login, and set up token auth for CI.
 order: 1
+status: stable
+audience: developers
+category: how-to
+product: Nimbus Platform
+owners: docs-writers
+last_reviewed: 2026-07-01
 ---
 
 # Install the CLI

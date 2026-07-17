@@ -2,6 +2,12 @@
 title: Storage API
 description: REST endpoints for Nimbus Store objects and signed URLs, and for Nimbus KV keys, TTLs, and atomic increments.
 order: 4
+status: stable
+audience: developers
+category: reference
+product: Nimbus Platform
+owners: docs-writers
+last_reviewed: 2026-07-01
 ---
 
 # Storage API

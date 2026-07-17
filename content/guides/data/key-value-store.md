@@ -2,6 +2,12 @@
 title: Key-value store (Nimbus KV)
 description: Attach a KV namespace for caching, sessions, and counters — the API, TTLs, atomic increments, size limits, and consistency model.
 order: 2
+status: stable
+audience: developers
+category: how-to
+product: Nimbus Platform
+owners: docs-writers
+last_reviewed: 2026-07-01
 ---
 
 # Key-value store (Nimbus KV)

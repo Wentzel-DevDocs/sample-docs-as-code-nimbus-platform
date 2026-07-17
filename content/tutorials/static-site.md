@@ -2,6 +2,12 @@
 title: Deploy a static site
 description: Build and deploy a static frontend to the edge — the static service type, build command, publish directory, caching, and a custom domain.
 order: 2
+status: stable
+audience: developers
+category: tutorial
+product: Nimbus Platform
+owners: docs-writers
+last_reviewed: 2026-07-01
 ---
 
 # Deploy a static site

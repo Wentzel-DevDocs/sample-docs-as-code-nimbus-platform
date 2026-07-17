@@ -2,6 +2,12 @@
 title: Managed Postgres
 description: Provision a Nimbus Postgres database, connect from services and locally, understand plans, backups, point-in-time recovery, and upgrades.
 order: 3
+status: stable
+audience: developers
+category: how-to
+product: Nimbus Platform
+owners: docs-writers
+last_reviewed: 2026-07-01
 ---
 
 # Managed Postgres

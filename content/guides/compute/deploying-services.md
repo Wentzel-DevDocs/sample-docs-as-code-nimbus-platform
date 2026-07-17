@@ -2,6 +2,12 @@
 title: Deploying services
 description: How Nimbus builds and rolls out services — Dockerfiles vs buildpacks, build caching and limits, deploying specific services, and zero-downtime rollouts.
 order: 1
+status: stable
+audience: developers
+category: how-to
+product: Nimbus Platform
+owners: docs-writers
+last_reviewed: 2026-07-01
 ---
 
 # Deploying services

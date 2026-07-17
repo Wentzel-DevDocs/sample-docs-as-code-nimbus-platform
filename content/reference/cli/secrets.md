@@ -2,6 +2,12 @@
 title: nimbus secrets
 description: Full reference for nimbus secrets — set, list, and remove secrets per environment, bulk import from files, and how injection and restarts work.
 order: 4
+status: stable
+audience: developers
+category: reference
+product: Nimbus Platform
+owners: docs-writers
+last_reviewed: 2026-07-01
 ---
 
 # nimbus secrets

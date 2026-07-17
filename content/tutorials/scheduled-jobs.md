@@ -2,6 +2,12 @@
 title: Run scheduled jobs
 description: Build a cron service — schedule syntax, writing a well-behaved job, reading per-run logs, overlap rules, and failure alerts.
 order: 3
+status: stable
+audience: developers
+category: tutorial
+product: Nimbus Platform
+owners: docs-writers
+last_reviewed: 2026-07-01
 ---
 
 # Run scheduled jobs

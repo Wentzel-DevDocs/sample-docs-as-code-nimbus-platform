@@ -2,6 +2,12 @@
 title: Networking issues
 description: Diagnosing custom domain and TLS problems, DNS propagation, internal service DNS failures, egress allowlists, WebSocket drops, and timeouts.
 order: 3
+status: stable
+audience: all
+category: troubleshooting
+product: Nimbus Platform
+owners: docs-writers
+last_reviewed: 2026-07-01
 ---
 
 # Networking issues

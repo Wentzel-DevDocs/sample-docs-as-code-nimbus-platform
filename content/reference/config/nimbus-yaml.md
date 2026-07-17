@@ -2,6 +2,12 @@
 title: nimbus.yaml
 description: The complete nimbus.yaml reference — project keys, every service field by type, scale and size options, and resource declarations.
 order: 1
+status: stable
+audience: developers
+category: reference
+product: Nimbus Platform
+owners: docs-writers
+last_reviewed: 2026-07-01
 ---
 
 # nimbus.yaml

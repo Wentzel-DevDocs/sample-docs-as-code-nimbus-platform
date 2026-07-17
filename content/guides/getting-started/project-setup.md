@@ -2,6 +2,12 @@
 title: Set up a project
 description: Create a Nimbus project with nimbus init, understand the starter nimbus.yaml, pick a region, and optionally connect a git repository.
 order: 2
+status: stable
+audience: developers
+category: how-to
+product: Nimbus Platform
+owners: docs-writers
+last_reviewed: 2026-07-01
 ---
 
 # Set up a project

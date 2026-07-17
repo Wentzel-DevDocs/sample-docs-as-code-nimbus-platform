@@ -2,6 +2,12 @@
 title: Build failures
 description: Diagnosing failed builds — reading build logs, dependency and lockfile errors, buildpack detection failures, timeouts, and oversized images.
 order: 1
+status: stable
+audience: all
+category: troubleshooting
+product: Nimbus Platform
+owners: docs-writers
+last_reviewed: 2026-07-01
 ---
 
 # Build failures

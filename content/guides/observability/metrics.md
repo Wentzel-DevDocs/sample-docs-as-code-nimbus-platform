@@ -2,6 +2,12 @@
 title: Metrics
 description: The metrics Nimbus records per service — requests, latency percentiles, CPU, memory, instance count — and how to query them from the dashboard or API.
 order: 2
+status: stable
+audience: developers
+category: how-to
+product: Nimbus Platform
+owners: docs-writers
+last_reviewed: 2026-07-01
 ---
 
 # Metrics

@@ -2,6 +2,12 @@
 title: Build an app on Postgres
 description: Attach Nimbus Postgres to a service, run schema migrations safely, query from the app, seed preview environments, and test a restore.
 order: 4
+status: stable
+audience: developers
+category: tutorial
+product: Nimbus Platform
+owners: docs-writers
+last_reviewed: 2026-07-01
 ---
 
 # Build an app on Postgres

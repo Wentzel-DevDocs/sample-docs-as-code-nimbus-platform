@@ -1,0 +1,9 @@
+{
+  "description": "Sample redirect map for enterprise docs migrations. Paths are site-absolute without domain.",
+  "redirects": [
+    { "from": "/guides/compute/services", "to": "/guides/compute/deploying-services", "status": 301 },
+    { "from": "/guides/getting-started/first-deploy", "to": "/guides/getting-started/first-deployment", "status": 301 },
+    { "from": "/docs/cli", "to": "/reference/cli/overview", "status": 301 },
+    { "from": "/docs/yaml", "to": "/reference/config/nimbus-yaml", "status": 301 }
+  ]
+}

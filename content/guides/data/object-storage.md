@@ -2,6 +2,12 @@
 title: Object storage (Nimbus Store)
 description: Attach a Store bucket, read and write objects over the REST API, generate signed URLs for uploads and downloads, and serve public files.
 order: 1
+status: stable
+audience: developers
+category: how-to
+product: Nimbus Platform
+owners: docs-writers
+last_reviewed: 2026-07-01
 ---
 
 # Object storage (Nimbus Store)

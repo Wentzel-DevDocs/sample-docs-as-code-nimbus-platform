@@ -2,6 +2,12 @@
 title: Networking
 description: How traffic reaches a service — load balancing, private service-to-service DNS, egress IPs, and request limits.
 order: 5
+status: stable
+audience: all
+category: concept
+product: Nimbus Platform
+owners: docs-writers
+last_reviewed: 2026-07-01
 ---
 
 # Networking

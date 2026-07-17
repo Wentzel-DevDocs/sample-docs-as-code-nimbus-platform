@@ -2,6 +2,12 @@
 title: Your first deployment
 description: Run nimbus deploy, follow the build and health-check phases, verify the live URL, and learn how rollback works.
 order: 3
+status: stable
+audience: developers
+category: how-to
+product: Nimbus Platform
+owners: docs-writers
+last_reviewed: 2026-07-01
 ---
 
 # Your first deployment

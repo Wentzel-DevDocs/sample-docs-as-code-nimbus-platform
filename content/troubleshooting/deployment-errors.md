@@ -2,6 +2,12 @@
 title: Deployment errors
 description: Diagnosing rollouts that build but fail to go live — health check timeouts, port binding mistakes, crash loops, OOM kills, and stuck deploys.
 order: 2
+status: stable
+audience: all
+category: troubleshooting
+product: Nimbus Platform
+owners: docs-writers
+last_reviewed: 2026-07-01
 ---
 
 # Deployment errors

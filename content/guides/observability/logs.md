@@ -2,6 +2,12 @@
 title: Logs
 description: Where service logs go, tailing and filtering with nimbus logs, structured logging, retention, and shipping logs elsewhere.
 order: 1
+status: stable
+audience: developers
+category: how-to
+product: Nimbus Platform
+owners: docs-writers
+last_reviewed: 2026-07-01
 ---
 
 # Logs
