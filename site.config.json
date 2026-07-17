@@ -1,8 +1,8 @@
 {
-  "siteTitle": "Nimbus Platform Docs",
+  "siteTitle": "Nimbus Platform",
   "generator": "sample-docs-builder/1.0.0 (sample-nimbus-platform)",
   "defaultSlug": "nimbus",
   "sampleQuestion": "How do I add a custom domain to a service?",
   "llmsTxt": true,
-  "llmsSummary": "Nimbus is a fictional cloud platform for deploying containerized services, scheduled jobs, and static sites, with built-in networking, object storage, managed Postgres, and a key-value store. These docs cover concepts, task guides, CLI/API/configuration reference, tutorials, and troubleshooting."
+  "llmsSummary": "Documentation for Nimbus, a fictional cloud platform for deploying web services, background workers, cron jobs, and static sites, with built-in object storage, a key-value store, and managed Postgres."
 }
